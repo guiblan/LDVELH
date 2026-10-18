@@ -16,7 +16,7 @@ Objectif : préciser le minimum nécessaire pour construire la feuille et vérif
 - Livrable : jeu de données structuré et vérifiable pour le livre, sans dépendance à une saisie manuelle répétée en jeu.
 - Validation : les six personnages sont représentés ; leurs valeurs de base, maximums de vie et équipements de départ peuvent être vérifiés par le porteur du projet.
 - Dépendances : R-01
-- Statut : À faire
+- Statut : En cours — six fiches transcrites ; relecture et compléments requis
 
 ## R-03 — Prototyper la chaîne JavaFX/Gluon sur le téléphone Android réel
 

@@ -1,0 +1,415 @@
+{
+  "schemaVersion": "1.0.0",
+  "library": {
+    "series": [
+      {
+        "id": "legendary-kingdoms",
+        "name": "Legendary Kingdoms",
+        "status": "verified",
+        "source": [
+          "docs/feuille-de-route-compagnon-ldvelh.md",
+          "docs/r-01-feuille-d-aventure-vallee-des-os.md"
+        ]
+      }
+    ],
+    "books": [
+      {
+        "id": "legendary-kingdoms-01",
+        "title": "La Vallée des Os",
+        "seriesId": "legendary-kingdoms",
+        "volumeNumber": 1,
+        "author": "Olivier Hulme",
+        "isbn": null,
+        "status": "to_confirm",
+        "verifiedFields": [
+          "title",
+          "seriesId",
+          "volumeNumber"
+        ],
+        "source": [
+          "docs/feuille-de-route-compagnon-ldvelh.md",
+          "docs/r-01-feuille-d-aventure-vallee-des-os.md"
+        ],
+        "characters": [
+          {
+            "id": "character-01",
+            "name": "Sar Jessica Dayne",
+            "role": "none",
+            "baseStats": {
+              "combat": 5,
+              "discretion": 1,
+              "savoir": 3,
+              "survie": 2,
+              "charisme": 4
+            },
+            "initialHealth": 8,
+            "maxHealth": 8,
+            "startingEquipment": [],
+            "spells": [],
+            "status": "to_confirm",
+            "fieldStatus": {
+              "name": "transcribed",
+              "role": "verified",
+              "baseStats": "transcribed",
+              "initialHealth": "transcribed",
+              "maxHealth": "verified",
+              "startingEquipment": "verified",
+              "spells": "not_applicable"
+            },
+            "provenance": {
+              "status": "transcribed_from_user_image",
+              "source": "Capture d'écran fournie par le porteur du projet dans la conversation, fiche Sar Jessica Dayne",
+              "bookPage": null
+            }
+          },
+          {
+            "id": "character-02",
+            "name": "Lord Ti'Quan",
+            "role": "magicien",
+            "roleLabel": "Jeteur de sorts",
+            "baseStats": {
+              "combat": 1,
+              "discretion": 2,
+              "savoir": 5,
+              "survie": 1,
+              "charisme": 2
+            },
+            "initialHealth": 6,
+            "maxHealth": 6,
+            "startingEquipment": [],
+            "spells": [],
+            "status": "to_confirm",
+            "fieldStatus": {
+              "name": "transcribed",
+              "role": "verified",
+              "baseStats": "transcribed",
+              "initialHealth": "transcribed",
+              "maxHealth": "verified",
+              "startingEquipment": "verified",
+              "spells": "deferred"
+            },
+            "provenance": {
+              "status": "transcribed_from_user_image",
+              "source": "Capture d'écran fournie par le porteur du projet dans la conversation, fiche Lord Ti'Quan",
+              "bookPage": null
+            }
+          },
+          {
+            "id": "character-03",
+            "name": "Tasha",
+            "role": "none",
+            "baseStats": {
+              "combat": 3,
+              "discretion": 5,
+              "savoir": 1,
+              "survie": 3,
+              "charisme": 3
+            },
+            "initialHealth": 8,
+            "maxHealth": 8,
+            "startingEquipment": [],
+            "spells": [],
+            "status": "to_confirm",
+            "fieldStatus": {
+              "name": "transcribed",
+              "role": "verified",
+              "baseStats": "transcribed",
+              "initialHealth": "transcribed",
+              "maxHealth": "verified",
+              "startingEquipment": "verified",
+              "spells": "not_applicable"
+            },
+            "provenance": {
+              "status": "transcribed_from_user_image",
+              "source": "Capture d'écran fournie par le porteur du projet dans la conversation, fiche Tasha",
+              "bookPage": null
+            }
+          },
+          {
+            "id": "character-04",
+            "name": "Amelia Pass-Dayne",
+            "role": "magicien",
+            "roleLabel": "Jeteuse de sorts",
+            "baseStats": {
+              "combat": 3,
+              "discretion": 2,
+              "savoir": 2,
+              "survie": 3,
+              "charisme": 1
+            },
+            "initialHealth": 6,
+            "maxHealth": 6,
+            "startingEquipment": [],
+            "spells": [],
+            "status": "to_confirm",
+            "fieldStatus": {
+              "name": "transcribed",
+              "role": "verified",
+              "baseStats": "transcribed",
+              "initialHealth": "transcribed",
+              "maxHealth": "verified",
+              "startingEquipment": "verified",
+              "spells": "deferred"
+            },
+            "provenance": {
+              "status": "transcribed_from_user_image",
+              "source": "Capture d'écran fournie par le porteur du projet dans la conversation, fiche Amelia Pass-Dayne",
+              "bookPage": null
+            }
+          },
+          {
+            "id": "character-05",
+            "name": "Akihiro",
+            "role": "none",
+            "baseStats": {
+              "combat": 4,
+              "discretion": 3,
+              "savoir": 2,
+              "survie": 3,
+              "charisme": 1
+            },
+            "initialHealth": 8,
+            "maxHealth": 8,
+            "startingEquipment": [],
+            "spells": [],
+            "status": "to_confirm",
+            "fieldStatus": {
+              "name": "transcribed",
+              "role": "verified",
+              "baseStats": "transcribed",
+              "initialHealth": "transcribed",
+              "maxHealth": "verified",
+              "startingEquipment": "verified",
+              "spells": "not_applicable"
+            },
+            "provenance": {
+              "status": "transcribed_from_user_image",
+              "source": "Capture d'écran fournie par le porteur du projet dans la conversation, fiche Akihiro",
+              "bookPage": null
+            }
+          },
+          {
+            "id": "character-06",
+            "name": "Joli cœur",
+            "role": "none",
+            "baseStats": {
+              "combat": 2,
+              "discretion": 4,
+              "savoir": 3,
+              "survie": 1,
+              "charisme": 5
+            },
+            "initialHealth": 8,
+            "maxHealth": 8,
+            "startingEquipment": [],
+            "spells": [],
+            "status": "to_confirm",
+            "fieldStatus": {
+              "name": "transcribed",
+              "role": "verified",
+              "baseStats": "transcribed",
+              "initialHealth": "transcribed",
+              "maxHealth": "verified",
+              "startingEquipment": "verified",
+              "spells": "not_applicable"
+            },
+            "provenance": {
+              "status": "transcribed_from_user_image",
+              "source": "Capture d'écran fournie par le porteur du projet dans la conversation, fiche Joli cœur",
+              "bookPage": null
+            }
+          }
+        ],
+        "characterDataRules": {
+          "role": {
+            "magicianCharacterIds": [
+              "character-02",
+              "character-04"
+            ],
+            "noRoleCharacterIds": [
+              "character-01",
+              "character-03",
+              "character-05",
+              "character-06"
+            ],
+            "status": "verified",
+            "source": "Confirmation explicite du porteur du projet dans la conversation"
+          },
+          "maxHealth": {
+            "rule": "equalsInitialHealth",
+            "status": "verified",
+            "source": "Confirmation explicite du porteur du projet dans la conversation"
+          },
+          "currentHealth": {
+            "minimum": 0,
+            "maximum": "maxHealth",
+            "zeroHealthStatus": "dead",
+            "deathIsPermanent": true,
+            "status": "verified",
+            "source": "Confirmation explicite du porteur du projet : dans La Vallée des Os, la mort est définitive"
+          },
+          "adventureHealthInitialization": {
+            "rule": "equalsMaxHealth",
+            "status": "verified",
+            "source": "Confirmation explicite du porteur du projet dans la conversation"
+          },
+          "startingEquipment": {
+            "rule": "none",
+            "status": "verified",
+            "source": "Confirmation explicite du porteur du projet dans la conversation"
+          },
+          "spells": {
+            "initialCatalog": "empty",
+            "allowReaderAddedEntries": true,
+            "maxPerMagician": 6,
+            "entryFields": [
+              "name",
+              "description"
+            ],
+            "descriptionBasedOn": "book",
+            "descriptionAuthoredBy": "reader",
+            "descriptionMethod": "readerRewritesBookDescription",
+            "verbatimBookTextAllowed": false,
+            "rechargeTrackingRequired": false,
+            "status": "deferred",
+            "source": "Décision du porteur du projet : ajouter les sorts au fil de l'eau"
+          }
+        },
+        "equipmentCatalog": [],
+        "equipmentCatalogPolicy": {
+          "scope": "book",
+          "allowReaderAddedEntries": true,
+          "readerAddedEntriesPersist": true,
+          "entryFields": [
+            "id",
+            "name",
+            "description",
+            "origin",
+            "source",
+            "bookPage",
+            "maxPossession",
+            "modifiers",
+            "status"
+          ],
+          "allowedOrigins": [
+            "book",
+            "user_added"
+          ],
+          "characterEquipmentSlotLimit": 5,
+          "characterInventoryListCount": 1,
+          "inventoryDisplayMode": "oneEntryPerUnit",
+          "characterInventoryContains": [
+            "equipment",
+            "items"
+          ],
+          "instanceProvenanceFields": [
+            "acquisitionParagraphNumber"
+          ],
+          "instanceProvenanceRule": "Conserver uniquement le numéro du paragraphe d'obtention avec chaque exemplaire individuel, sans en recopier le texte, y compris lors des dépôts, retraits ou transferts. Laisser la valeur inconnue si le numéro n'est pas disponible.",
+          "eachCarriedUnitUsesOneSlot": true,
+          "maxPossessionAppliesTo": "characterInventoryOnly",
+          "note": "Une définition ajoutée au catalogue est réutilisable par les personnages. Une quantité inconnue ou une absence de données ne vaut pas zéro."
+        },
+        "equipmentEntryTemplate": {
+          "id": null,
+          "name": null,
+          "description": null,
+          "origin": "user_added",
+          "source": null,
+          "bookPage": null,
+          "maxPossession": null,
+          "modifiers": {
+            "combat": null,
+            "discretion": null,
+            "savoir": null,
+            "survie": null,
+            "charisme": null,
+            "armure": null
+          },
+          "status": "to_confirm"
+        }
+      }
+    ]
+  },
+  "selectionRules": {
+    "initialCharactersPerAdventure": 4,
+    "distinctCharactersRequired": true,
+    "maxWizardsPerAdventure": 2,
+    "selectedBy": "reader"
+  },
+  "partyLifecycleRules": {
+    "bookId": "legendary-kingdoms-01",
+    "voluntaryReplacementAllowed": false,
+    "currencyScope": "party",
+    "initialSharedCurrency": 0,
+    "initialSharedVault": [],
+    "vaultCurrencySeparateFromPartyPurse": true,
+    "vaultEquipmentUsesCharacterSlots": false,
+    "vaultIgnoresItemMaxPossession": true,
+    "characterInventoryListsAreUnified": true,
+    "sharedVaultCapacity": "unlimited",
+    "vaultAccessibleToAllActiveCharacters": true,
+    "vaultDisplayMode": "oneEntryPerUnit",
+    "vaultItemWithdrawalSelectedBy": "reader",
+    "vaultItemDepositAllowed": true,
+    "vaultItemDepositSelectedBy": "reader",
+    "partialVaultWithdrawalAllowed": true,
+    "personalNotesHistory": {
+      "timestamps": true,
+      "createVersionOn": "notesWindowOrPopupClose",
+      "onlyWhenChanged": true
+    },
+    "missionNotesHistory": {
+      "timestamps": true,
+      "createVersionOn": "notesWindowOrPopupClose",
+      "onlyWhenChanged": true
+    },
+    "sectionProgressionHistory": {
+      "timestamps": true,
+      "createVersionOn": "sectionChange"
+    },
+    "onPermanentDeath": {
+      "removeFromActiveParty": true,
+      "preserveCharacterRecord": true,
+      "sharedCurrencyUnaffected": true,
+      "sharedVaultUnaffected": true,
+      "redistributeEquipmentAndItemsToOtherActiveCharacters": true,
+      "redistributionSelectedBy": "reader",
+      "unassignedItemsAfterRedistribution": "lost",
+      "replacementRequiredWhenAvailable": true,
+      "replacement": {
+        "allowedWhen": "aLivingCharacterNotPreviouslyInPartyExists",
+        "selectedBy": "reader",
+        "initializeCurrentHealth": "toMaxHealth",
+        "startingEquipment": [],
+        "enforceMaxWizardsPerAdventure": true
+      },
+      "whenNoReplacementIsAvailable": "continueWithSurvivors",
+      "status": "verified",
+      "source": "Confirmation explicite du porteur du projet dans la conversation"
+    }
+  },
+  "statusValues": [
+    "verified",
+    "to_confirm",
+    "not_provided"
+  ],
+  "provenanceStatusValues": [
+    "verified",
+    "to_confirm",
+    "not_provided",
+    "transcribed_from_user_image"
+  ],
+  "fieldStatusValues": [
+    "verified",
+    "to_confirm",
+    "not_provided",
+    "transcribed",
+    "deferred",
+    "not_applicable"
+  ],
+  "roleValues": [
+    "magicien",
+    "none"
+  ]
+}
