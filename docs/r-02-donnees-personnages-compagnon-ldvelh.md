@@ -2,7 +2,7 @@
 
 **Projet :** Compagnon LDVELH  
 **Livre de départ :** *La Vallée des Os*, tome 1 de *Legendary Kingdoms*  
-**Statut :** Transcription initiale des six fiches — relecture et compléments à confirmer  
+**Statut :** Terminé — six fiches relues et confirmées ; catalogue initial vide et extensible
 **Livrables associés :** [`docs/data/ldvelh-personnages-base.json`](./data/ldvelh-personnages-base.json)  
 **Référence métier :** [R-01 — feuille d’aventure de *La Vallée des Os*](./r-01-feuille-d-aventure-vallee-des-os.md)
 
@@ -10,9 +10,9 @@
 
 Ce document prépare les données initiales à intégrer dans la bibliothèque de l’application : la série, son premier livre, les six personnages de référence et le catalogue d’équipement du livre.
 
-Les documents du dépôt confirment le titre du livre, sa série et le nombre de personnages à proposer. Les trois captures d’écran partagées par le porteur apportent les noms, les rôles de jeteur de sorts explicitement légendés, les cinq compétences et la Santé initiale des six personnages. Le porteur a confirmé que la Santé initiale est également le maximum de Santé et qu’aucun personnage ne commence avec de l’équipement. Les données absentes restent signalées comme telles.
+Les documents du dépôt confirment le titre du livre, sa série et le nombre de personnages à proposer. Les trois captures d’écran partagées par le porteur apportent les noms, les rôles de jeteur de sorts explicitement légendés, les cinq compétences et la Santé initiale des six personnages. Le porteur a relu et confirmé ces transcriptions ; il a corrigé la Survie d’Akihiro à 5. Il a également confirmé que la Santé initiale est le maximum de Santé et qu’aucun personnage ne commence avec de l’équipement. Les données absentes restent signalées comme telles.
 
-Ce livrable ne déclare pas R-02 terminé ni validé : il établit une structure exploitable et rend visibles les informations encore nécessaires.
+Le jeu de données initial est vérifié et structuré. Le catalogue d’équipement reste vide tant qu’aucune entrée n’est fournie ; son parcours d’ajout à la demande et ses champs obligatoires sont définis ci-dessous.
 
 ## 2. Sources et niveau de confiance
 
@@ -34,7 +34,7 @@ Ce livrable ne déclare pas R-02 terminé ni validé : il établit une structure
 | Capacité du coffre-fort | Aucune capacité maximale | Confirmation explicite du porteur dans la conversation | Confirmé |
 | Accès au coffre-fort | Tous les personnages actifs peuvent y déposer les objets et équipements portés ou en retirer une quantité partielle ; le lecteur choisit les transferts et le porteur lors d’un retrait | Confirmation explicite du porteur dans la conversation | Confirmé |
 | Nombre maximal de magiciens dans l’équipe | 2 | Décision consignée dans la section 15.1 de R-01 | Confirmé dans R-01 |
-| Noms, valeurs des cinq compétences et Santé initiale | Capturés dans les trois images partagées dans la conversation | Captures des six fiches fournies par le porteur | Transcrits, relecture souhaitée |
+| Noms, valeurs des cinq compétences et Santé initiale | Capturés dans les trois images partagées dans la conversation ; Survie d’Akihiro corrigée à 5 | Captures des six fiches et relecture/correction par le porteur | Vérifiés par le porteur |
 | Rôle de magicien / jeteur de sorts | Lord Ti'Quan et Amelia Pass-Dayne | Captures et confirmation explicite du porteur | Confirmé |
 | Rôle des quatre autres personnages | Aucun rôle dans ce livre | Confirmation explicite du porteur | Confirmé |
 | Maximum de Santé | Égal à la Santé initiale | Confirmation explicite du porteur dans la conversation | Confirmé |
@@ -47,29 +47,29 @@ Ce livrable ne déclare pas R-02 terminé ni validé : il établit une structure
 | Aucun remplaçant disponible | L’aventure continue avec les personnages survivants, même si l’équipe compte moins de quatre membres | Confirmation explicite du porteur dans la conversation | Confirmé pour ce livre uniquement |
 | Équipement au démarrage | Aucun pour les six personnages | Confirmation explicite du porteur dans la conversation | Confirmé |
 | Répartition des biens d’un personnage mort | Le lecteur choisit quels personnages actifs reçoivent son équipement et ses objets ; ceux qui ne peuvent être attribués sont perdus | Confirmation explicite du porteur dans la conversation | Confirmé |
-| Modificateurs et catalogue d’équipement | Aucun équipement initial ; équipements à ajouter ensuite au catalogue | Catalogue extensible décrit par R-01 et cette confirmation | À enrichir au fil de l’utilisation |
+| Modificateurs et catalogue d’équipement | Catalogue initial vide ; le lecteur choisit une entrée existante ou ajoute une nouvelle entrée puis la sélectionne | Confirmation du porteur et politique de catalogue décrite dans ce document | Structure confirmée ; entrées à ajouter au fil de l’utilisation |
 | Sorts initiaux | Aucun sort préchargé ; ajout au fil de l’eau pour les magiciens | Décision explicite du porteur dans la conversation | Saisie différée |
-| Auteur | Olivier Hulme, renseigné dans le JSON | Source de cette métadonnée non consignée | À confirmer |
-| ISBN | Non présent dans les documents consultés | À vérifier si cette métadonnée est nécessaire | Non fourni |
+| Auteur | Olivier Hulme | Confirmation explicite du porteur dans la conversation | Confirmé |
+| ISBN | Absent du livre consulté par le porteur ; valeur conservée comme inconnue | Confirmation explicite du porteur dans la conversation | Non fourni |
 
 Les identifiants `character-01` à `character-06` sont des identifiants techniques provisoires et stables. Ils ne préjugent ni des noms ni de l’ordre officiel des personnages dans le livre.
 
 ## 3. Inventaire initial des personnages
 
-Les six entrées doivent exister dès le premier chargement afin que le futur parcours puisse proposer quatre personnages distincts. Les noms, compétences et Santé initiale ci-dessous sont transcrits des captures partagées par le porteur. Le maximum de Santé reprend la Santé initiale, conformément à la règle confirmée par le porteur. Aucun personnage ne reçoit d’équipement initial.
+Les six entrées doivent exister dès le premier chargement afin que le futur parcours puisse proposer quatre personnages distincts. Les noms, compétences et Santé initiale ci-dessous sont transcrits des captures puis relus et confirmés par le porteur. Le maximum de Santé reprend la Santé initiale, conformément à la règle confirmée par le porteur. Aucun personnage ne reçoit d’équipement initial.
 
 | Identifiant | Nom | Rôle visible | Combat | Discrétion | Savoir | Survie | Charisme | Santé initiale | Maximum de Santé | Équipement de départ | Statut |
 |---|---|---|---:|---:|---:|---:|---:|---:|---|---|---|
-| `character-01` | Sar Jessica Dayne | Aucun rôle dans ce livre | 5 | 1 | 3 | 2 | 4 | 8 | 8 | Aucun | Transcrit ; rôle confirmé |
-| `character-02` | Lord Ti'Quan | Magicien (jeteur de sorts) | 1 | 2 | 5 | 1 | 2 | 6 | 6 | Aucun | Transcrit ; rôle confirmé |
-| `character-03` | Tasha | Aucun rôle dans ce livre | 3 | 5 | 1 | 3 | 3 | 8 | 8 | Aucun | Transcrit ; rôle confirmé |
-| `character-04` | Amelia Pass-Dayne | Magicienne (jeteuse de sorts) | 3 | 2 | 2 | 3 | 1 | 6 | 6 | Aucun | Transcrit ; rôle confirmé |
-| `character-05` | Akihiro | Aucun rôle dans ce livre | 4 | 3 | 2 | 3 | 1 | 8 | 8 | Aucun | Transcrit ; rôle confirmé |
-| `character-06` | Joli cœur | Aucun rôle dans ce livre | 2 | 4 | 3 | 1 | 5 | 8 | 8 | Aucun | Transcrit ; rôle confirmé |
+| `character-01` | Sar Jessica Dayne | Aucun rôle dans ce livre | 5 | 1 | 3 | 2 | 4 | 8 | 8 | Aucun | Vérifié par le porteur |
+| `character-02` | Lord Ti'Quan | Magicien (jeteur de sorts) | 1 | 2 | 5 | 1 | 2 | 6 | 6 | Aucun | Vérifié par le porteur |
+| `character-03` | Tasha | Aucun rôle dans ce livre | 3 | 5 | 1 | 3 | 3 | 8 | 8 | Aucun | Vérifié par le porteur |
+| `character-04` | Amelia Pass-Dayne | Magicienne (jeteuse de sorts) | 3 | 2 | 2 | 3 | 1 | 6 | 6 | Aucun | Vérifié par le porteur |
+| `character-05` | Akihiro | Aucun rôle dans ce livre | 4 | 3 | 2 | 5 | 1 | 8 | 8 | Aucun | Vérifié par le porteur ; Survie corrigée à 5 |
+| `character-06` | Joli cœur | Aucun rôle dans ce livre | 2 | 4 | 3 | 1 | 5 | 8 | 8 | Aucun | Vérifié par le porteur |
 
 ### 3.1 Données attendues par personnage
 
-À relever ou confirmer pour compléter chacune des six fiches :
+Les règles et données consignées pour chacune des six fiches sont :
 
 - nom exact et rôle du personnage ; les rôles sont désormais confirmés : seuls Lord Ti'Quan et Amelia Pass-Dayne sont magiciens, les quatre autres n’ont pas de rôle dans ce livre ;
 - valeur initiale de Combat, Discrétion, Savoir, Survie et Charisme ;
@@ -98,6 +98,10 @@ Le catalogue est associé au livre. Il distingue :
 2. les équipements ajoutés par le lecteur au fil de l’aventure.
 
 Une définition d’équipement est enregistrée une fois dans le catalogue du livre puis peut être attribuée aux personnages concernés. Chaque exemplaire porté est une entrée distincte de l’inventaire, même si plusieurs exemplaires utilisent la même définition ; il ne crée pas une nouvelle définition de l’objet. Pour chaque exemplaire acquis, l’état de l’aventure conserve uniquement le numéro du paragraphe où il a été obtenu, s’il est connu, sans en recopier le texte. Cette provenance d’acquisition reste attachée à l’exemplaire lors de son dépôt dans le coffre, de son retrait ou de son transfert à un autre personnage. Le numéro de page associé à la définition du catalogue est distinct du numéro de paragraphe d’obtention. L’ajout d’une entrée au catalogue doit rester disponible lors des utilisations ultérieures et ne doit pas modifier silencieusement les données de référence initiales du livre.
+
+Le parcours prévu permet de choisir un équipement déjà présent dans le catalogue ou, s’il manque, de créer sa définition puis de la sélectionner immédiatement. Les nouvelles définitions sont conservées dans le catalogue du livre pour les utilisations ultérieures.
+
+À la création d’une entrée, le nom, les modificateurs (y compris des valeurs nulles explicites pour indiquer l’absence d’effet) et la limite de possession doivent être renseignés. La valeur `-1` signifie explicitement « sans limite » pour la possession par un personnage. La description et la page du livre peuvent rester inconnues ; une entrée qui ne provient pas du livre est identifiée comme ajoutée par le lecteur. Une donnée obligatoire ne peut pas être laissée inconnue.
 
 Pour chaque équipement, le modèle prévoit :
 
@@ -131,20 +135,22 @@ Le fichier JSON décrit la bibliothèque de référence : série, livre, personn
 
 R-01 fixe que les valeurs modifiées des cinq compétences correspondent à la valeur de base plus la somme des modificateurs des équipements portés ; l’Armure correspond à la somme de ses modificateurs d’équipement. Les nombres eux-mêmes et les définitions d’équipement nécessaires à ces calculs restent à fournir et à vérifier.
 
-## 6. Points à confirmer ou à fournir
+## 6. Enrichissements différés
 
-1. **Source des six fiches :** pages, photos lisibles ou transcription des noms, rôles et valeurs initiales.
-2. **Équipements ajoutés en cours de jeu :** saisir chaque objet dans le catalogue à mesure qu’il apparaît, avec ses modificateurs et sa limite de possession lorsque ceux-ci seront connus.
+1. **Pages des six fiches :** les renseigner lorsqu’elles sont disponibles ; elles ne bloquent pas la vérification des valeurs confirmées par le porteur.
+2. **Équipements ajoutés en cours de jeu :** saisir chaque objet dans le catalogue à mesure qu’il apparaît, en renseignant son nom, ses modificateurs et sa limite de possession (`-1` si elle est illimitée).
 3. **Sorts :** les ajouter au fil de l’eau pour Lord Ti'Quan et Amelia Pass-Dayne ; aucune liste de départ n’est requise.
 4. **Sources précises :** numéro de page pour les données de personnage et les définitions d’équipement lorsque disponible ; numéro du paragraphe d’obtention pour chaque exemplaire acquis pendant l’aventure, sans recopier son texte.
-5. **Métadonnées bibliographiques :** confirmer la provenance de l’auteur déjà indiqué dans le JSON et l’ISBN, s’ils doivent figurer dans la fiche de bibliothèque.
+5. **Métadonnées bibliographiques :** l’auteur Olivier Hulme est confirmé par le porteur ; l’ISBN est absent du livre et reste inconnu.
 
-Les ajouts futurs au catalogue ne sont pas bloqués par ces questions : ils peuvent être saisis au fil de l’eau, identifiés comme ajouts du lecteur et complétés ultérieurement avec une source.
+Ces enrichissements ne bloquent pas la clôture de R-02 : les informations encore indisponibles ne sont pas inventées et les entrées du catalogue seront ajoutées lorsqu’elles seront connues.
 
 ## 7. Critères de validation R-02
 
 - Le livre est rattaché à *Legendary Kingdoms*, tome 1.
 - Six entrées de personnage stables sont présentes ; une aventure peut ensuite en sélectionner quatre distinctes, avec au plus deux magiciens.
+- Les noms, les cinq compétences et la Santé initiale des six personnages ont été relus et confirmés par le porteur ; les valeurs confirmées sont enregistrées avec leur provenance.
+- Le catalogue initial peut être vide ; une entrée créée à la demande est conservée et sélectionnable immédiatement. Son nom, ses modificateurs et sa limite de possession sont obligatoires ; `-1` représente une possession sans limite.
 - Chaque valeur factuelle de personnage et chaque objet du catalogue porte un statut et une provenance permettant sa vérification ; les pages sont consignées lorsqu’elles sont disponibles.
 - Chaque sort ajouté à un magicien comporte un nom et une description réécrite par le lecteur à partir de celle du livre, sans reprise mot pour mot ; la liste ne dépasse pas six sorts par magicien et aucun suivi de recharge n’est requis.
 - Chaque exemplaire d’objet ou d’équipement acquis en cours d’aventure conserve uniquement son numéro de paragraphe d’obtention lorsqu’il est connu, sans copier le texte du paragraphe, y compris après dépôt, retrait ou transfert.
@@ -171,4 +177,4 @@ Les ajouts futurs au catalogue ne sont pas bloqués par ces questions : ils peuv
 - Le catalogue accepte des équipements ajoutés par le lecteur sans confusion avec les données initiales vérifiées du livre.
 - Les données de bibliothèque restent distinctes des valeurs courantes et calculées d’une aventure.
 
-**Maturité actuelle :** les noms, les cinq compétences et la Santé initiale des six personnages sont transcrits ; le maximum égal à la Santé initiale, le démarrage de chaque aventure au maximum de Santé, les bornes de Santé courante, la mort définitive à zéro et le remplacement possible depuis les personnages encore disponibles, l’absence d’équipement au départ et les rôles des six personnages sont confirmés par le porteur. Le catalogue d’équipement reste à enrichir au fil du jeu.
+**Maturité actuelle :** les six fiches ont été relues et confirmées par le porteur ; la Survie d’Akihiro est corrigée à 5. Le maximum égal à la Santé initiale, le démarrage de chaque aventure au maximum de Santé, les bornes de Santé courante, la mort définitive à zéro et le remplacement possible depuis les personnages encore disponibles, l’absence d’équipement au départ et les rôles des six personnages sont confirmés par le porteur. Le catalogue initial vide et son fonctionnement extensible sont définis ; ses entrées seront ajoutées au fil du jeu.
