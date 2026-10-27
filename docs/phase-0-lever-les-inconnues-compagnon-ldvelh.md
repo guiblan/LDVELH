@@ -24,7 +24,8 @@ Objectif : préciser le minimum nécessaire pour construire la feuille et vérif
 - Livrable : décision de faisabilité et prototype exécutable.
 - Validation : le prototype se construit, s'installe et démarre sur le téléphone ; une donnée locale survit à un redémarrage ; la voie d'accès aux fichiers est validée.
 - Dépendances : —
-- Statut : À faire
+- Prototype initial : [`prototypes/r-03-android/`](../prototypes/r-03-android/)
+- Statut : Prototype créé et tests JVM passés ; GraalVM CE 21.0.2 est installé et configuré, tout comme l’Android SDK et `adb` dans `~/Android/Sdk`. Le poste dispose de Platform 37 et Build Tools 36, pas des versions candidates 35. `nativeBuild` atteint GraalVM Native Image puis échoue sur `Missing CAP cache value for: NativeCodeInfo:PosixDirectives:ConstantInfo:CLOCK_REALTIME`. Aucun appareil n’est détecté ; packaging, installation et validation sur téléphone restent à faire.
 
 ## R-04 — Arrêter les versions et outils compatibles pour Java, JavaFX/Gluon, Android SDK, build et stockage local
 
