@@ -1,0 +1,53 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'com.gluonhq.gluonfx-gradle-plugin' version '1.0.29'
+}
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+javafx {
+    version = '21.0.7'
+    modules = ['javafx.controls']
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.12.2'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.12.2'
+}
+
+application {
+    mainClass = 'fr.ldvelh.r03.R03PrototypeApp'
+}
+
+gluonfx {
+    target = 'android'
+    appIdentifier = 'fr.ldvelh.r03prototype'
+
+    attachConfig {
+        version = '4.0.25'
+        services 'storage'
+    }
+
+    release {
+        appLabel = 'LDVELH R-03'
+        versionCode = '1'
+        versionName = '0.1.0'
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 21
+    options.encoding = 'UTF-8'
+}
+
+test {
+    useJUnitPlatform()
+}
